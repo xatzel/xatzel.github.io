@@ -3,18 +3,56 @@
 
 body {
     font-family: 'Ubuntu', sans-serif;
-    background-color: #252529;
+    background-color: #dadada;
     margin: 0;
-    color: #fff;
+    color: rgb(95, 24, 74);
     line-height: 1.6;
      
 }
+/*showcase*/
+#showcase{
+  margin: 0;
+  padding: 0;
+  background: url(../src/img/background-design-frame-587441.jpg) no-repeat 
+  center/cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow-y: hidden;
+}
 
+#showcase.container {
+  margin-top: 25vh;
+
+}
+ #showcase h1{
+   font-size: 4rem;
+   margin-bottom: 0;
+ }
+ #showcase h2{
+  font-size: 2rem;
+}
+
+/* utility class*/
+.container{
+  max-width: 1180px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 3rem;
+
+}
+
+.lead{
+font-size: 1.3 rem;
+
+}
+
+/*Nav Style*/
   nav {
     height: 40px;
     width: 100%;
-    background-color: #333;
-    color: #eee;
+    background-color: #eee;
+    color: #333;
     position: fixed;
   }
   nav ul {
@@ -31,7 +69,7 @@ body {
     text-align: center;
     text-decoration: none;
     padding: 10px 0;
-    color: #eee;
+    color: rgb(8, 2, 2);
     text-decoration: none;
   }
   nav li:hover {
@@ -42,7 +80,22 @@ body {
   }
   
   @media screen and (max-width: 580px) {
-   
+    
+    .hide-on-small{
+      display: none;
+    }
+    #showcase{
+      height: 50vh;
+    }
+    #showcase.container{
+      margin-top: 15vh;
+    }
+    #showcase h1{
+      font-size: 3rem;
+    }
+    #showcase h2{
+      font-size: 1.5rem; 
+    }
     nav {
       height: auto;
       border-bottom: 0;
@@ -60,7 +113,7 @@ body {
       text-align: left;
       width: 100%;
       text-indent: 25px;
-      background: #333333;
+      background: #e4e1e1;
       border-bottom: 1px solid #555;
     }
     nav a:hover {
@@ -82,7 +135,7 @@ body {
     }
     nav a#openup {
       display: block;
-      background-color: #333;
+      background-color: rgb(224, 216, 222);
       width: 100%;
       position: relative;
     }
